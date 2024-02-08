@@ -12,7 +12,6 @@ btn.addEventListener('click', (evt) => {
     {
         alert("Please enter any task");
     }
- 
     input.value = '';
 })
 
@@ -41,21 +40,28 @@ const addTask = (data) =>
     deleteBtn.append(deleteIcon);
 
     deleteBtn.addEventListener('click' , () => {
-        // deleteTask();
-        let parentEle = deleteBtn.parentElement;
-        // console.log(parentEle);
-        parentEle.style.display = "none";
+        deleteTask(deleteBtn);
     })
 
     //when task colmpleted
     element.addEventListener('click' , () =>
     {
-        // chkIcon.style.visibility = 'visible';
-        checkBtn.classList.toggle('makeGreen');
-        element.classList.toggle('changeBg');
-        
+        changeTaskColor(checkBtn,element);
     }) 
 }
 
+const deleteTask = (deleteBtn) =>
+{
+       // deleteTask();
+       let parentEle = deleteBtn.parentElement;
+       // console.log(parentEle);
+       parentEle.style.display = "none";
+}
+
+const changeTaskColor = (checkBtn,element) =>
+{
+    checkBtn.classList.toggle('makeGreen');
+    element.classList.toggle('changeBg');
+}
 
 
