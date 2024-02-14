@@ -1,0 +1,124 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #EBD9B4;
+    padding: 20px;
+}
+
+.container
+{
+    width: 100%;
+    height: auto;
+    padding: 60px;
+} 
+
+.create_note_btn button
+{
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-color: #3C3633;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #3C3633;
+    margin-bottom: 10px;
+}
+
+.note
+{
+    width: 30%;
+    height: 31vh;
+    border: 2px solid black;
+    margin: 10px;
+    /* background-color: white; */
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.oprations
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    
+}
+
+.oprations button{
+    border: none;
+    font-size: 1rem;
+
+    transition: all 0.5s;
+    
+    &:hover
+    {
+        font-size: smaller;
+    }
+}
+
+.delete-btn
+{
+    margin: 0px 10px;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 50%;
+    /* color: white; */
+}
+
+.edit-btn
+{
+    background-color: rgb(8, 255, 8);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+textarea
+{
+    width: 100%;
+    height: calc(30vh - 45px);
+    resize: none;
+    overflow-y: scroll;
+    outline: none;
+    border: none;
+    padding: 20px; 
+    font-size: 1rem;
+    position: absolute;
+    visibility: hidden;
+    background-color: transparent;
+   
+}
+
+.main
+{
+
+    width: 100%;
+    height: calc(30vh - 45px);
+    padding: 20px;
+    position: absolute;
+    overflow-y: scroll;
+    visibility: hidden;
+    /* background-color: blue; */
+   
+}
+
+.hidden
+{
+    /* display: none; */
+    /* display: none; */
+    z-index: 1;
+    visibility: visible;
+} 
+
+
+
+
+
